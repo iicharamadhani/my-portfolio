@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white overflow-x-hidden pt-[75px]">
+  
+  <section class="px-4 md:px-10">
+
+    <!-- NAVBAR -->
+     <nav id="navbar" class="fixed top-0 left-1/2 -translate-x-1/2 w-[94%] md:w-[68%] bg-white/75 border border-white/40 rounded-full px-5 md:px-8 py-3 z-50 shadow-[0_8px_30px_rgba(0,0,0,0.05)] backdrop-blur-xl duration-500">
+
+  <div class="flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="asset/logoo.png" alt="" class="w-10 h-10 rounded-full object-cover">
+      <h1 class="text-lg md:text-xl font-semibold text-gray-800 tracking-wide">
+        My Portfolio
+      </h1>
+    </div>
+
+    <!-- Menu -->
+    <ul class="flex gap-4 md:gap-8 text-[14px] md:text-[15px] font-medium text-gray-700">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- HERO -->
+<section class="bg-[#f6dfe8] rounded-[40px] px-6 py-8 md:px-14 md:py-12 overflow-hidden mb-10 shadow-sm">
+
+  <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-14">
+
+    <!-- Text -->
+    <div id="heroText" class="flex-1 text-center lg:text-left opacity-0 translate-y-10 duration-1000">
+      <p class="text-[15px] md:text-[17px] tracking-[3px] text-gray-700 mb-4">
+        HELLO I'M
+      </p>
+      <h1 class="text-4xl md:text-6xl font-bold leading-[1.15] text-black mb-7">
+        Future Web
+        <br>
+        <span id="typing"></span>
+      </h1>
+
+      <p class="text-[15px] md:text-[17px] leading-8 text-gray-700 max-w-xl mx-auto lg:mx-0 mb-10">
+        I am Icha Ramadhani, a future web developer currently learning and refining my skills in Software Engineering (PPLG) to create modern and interactive websites.
+      </p>
+
+      <a href="#projects" class="inline-flex items-center gap-3 bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-6 py-3 rounded-full text-[15px] md:text-[16px] text-black shadow-md hover:-translate-y-1 hover:scale-105">
+        See my works
+        <i class="ri-arrow-right-line text-xl"></i>
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div id="heroImage" class="flex-1 flex justify-center opacity-0 translate-x-10 duration-1000">
+      <div class="w-[250px] h-[320px] md:w-[360px] md:h-[450px] bg-[#ebc5d0] rounded-full overflow-hidden flex items-end justify-center shadow-lg float">
+        <img src="asset/heroo.png" alt="" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ABOUT -->
+<section id="about" class="py-10 md:py-16">
+
+  <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+    <!-- Image -->
+    <div id="aboutImage" class="bg-[#f6dfe8] rounded-[35px] p-5 md:p-7 opacity-0 -translate-x-14 duration-1000 shadow-sm min-h-[280px]">
+      <div class="overflow-hidden rounded-[28px] h-full">
+        <img src="asset/aboutt.png" alt="" class="w-full h-full object-cover hover:scale-105 duration-500">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div id="aboutText" class="opacity-0 translate-x-14 duration-1000">
+
+      <!-- Title -->
+      <h1 class="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
+        About Me
+      </h1>
+
+      <!-- Description -->
+      <div class="bg-[#f6dfe8] rounded-[30px] p-6 md:p-8 mb-8 shadow-sm">
+
+        <p class="text-[15px] md:text-[16px] leading-8 text-gray-700">
+          I’m a Software and Game Development student passionate about building modern and user-friendly websites.
+          <br><br>
+          I focus on clean design, responsive layouts, and creating smooth user experiences using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.
+          <br><br>
+          I’m always learning, exploring new ideas, and improving my skills to become a better developer.
+        </p>
+      </div>
+
+      <!-- Stats -->
+<div class="grid grid-cols-3 gap-5 text-center mb-8">
+
+  <div class="bg-white rounded-[22px] py-5 shadow-sm border border-pink-100">
+    <h2 class="counter text-2xl md:text-3xl font-bold text-black" data-target="5">
+      0
+    </h2>
+    <p class="text-[13px] md:text-[14px] mt-2 text-gray-600">
+      Education
+    </p>
+  </div>
+
+  <div class="bg-white rounded-[22px] py-5 shadow-sm border border-pink-100">
+    <h2 class="counter text-2xl md:text-3xl font-bold text-black" data-target="5">
+      0
+    </h2>
+    <p class="text-[13px] md:text-[14px] mt-2 text-gray-600">
+      Experience
+    </p>
+  </div>
+
+  <div class="bg-white rounded-[22px] py-5 shadow-sm border border-pink-100">
+    <h2 class="counter text-2xl md:text-3xl font-bold text-black" data-target="5">
+      0
+    </h2>
+    <p class="text-[13px] md:text-[14px] mt-2 text-gray-600">
+      Projects
+    </p>
+  </div>
+
+</div>
+
+      <!-- Button -->
+      <a href="about.html" class="inline-flex items-center gap-3 bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-6 py-3 rounded-full text-[15px] md:text-[16px] text-black shadow-md hover:-translate-y-1 hover:scale-105">
+        View more
+        <i class="ri-arrow-right-line text-lg"></i>
+      </a>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- PROJECT SECTION -->
+<section id="projects" class="py-14 md:py-10">
+
+  <!-- WRAPPER -->
+  <div class="relative bg-[#f4d9e6] rounded-[45px] px-6 md:px-14 py-24 overflow-hidden">
+
+    <!-- TOP WAVE -->
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+  <svg
+    class="relative block w-full h-[55px]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 120"
+    preserveAspectRatio="none">
+
+    <path
+      fill="#ffffff"
+      d="M0,64 
+      C30,20 90,20 120,64
+      C150,108 210,108 240,64
+      C270,20 330,20 360,64
+      C390,108 450,108 480,64
+      C510,20 570,20 600,64
+      C630,108 690,108 720,64
+      C750,20 810,20 840,64
+      C870,108 930,108 960,64
+      C990,20 1050,20 1080,64
+      C1110,108 1170,108 1200,64
+      C1230,20 1290,20 1320,64
+      C1350,108 1410,108 1440,64
+      L1440,0 L0,0 Z">
+    </path>
+
+  </svg>
+</div>
+
+    <!-- BOTTOM WAVE -->
+    <div class="absolute bottom-0 left-0 w-full rotate-180 overflow-hidden leading-[0]">
+      <svg
+    class="relative block w-full h-[55px]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 120"
+    preserveAspectRatio="none">
+
+    <path
+      fill="#ffffff"
+      d="M0,64 
+      C30,20 90,20 120,64
+      C150,108 210,108 240,64
+      C270,20 330,20 360,64
+      C390,108 450,108 480,64
+      C510,20 570,20 600,64
+      C630,108 690,108 720,64
+      C750,20 810,20 840,64
+      C870,108 930,108 960,64
+      C990,20 1050,20 1080,64
+      C1110,108 1170,108 1200,64
+      C1230,20 1290,20 1320,64
+      C1350,108 1410,108 1440,64
+      L1440,0 L0,0 Z">
+
+    </path>
+  </svg>
+</div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10">
+
+      <!-- TITLE -->
+      <div class="text-center mb-10">
+
+        <h1 class="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
+          Featured Projects
+        </h1>
+        <p class="text-[15px] md:text-[16px] leading-8 text-gray-700">
+          Here are some projects I’ve created to improve my web development skills and creativity.
+        </p>
+      </div>
+
+      <!-- TOP CARD -->
+      <div class="grid md:grid-cols-3 gap-8 justify-items-center mb-8">
+
+        <!-- CARD -->
+        <div class="project-card opacity-0 translate-y-10 duration-700 bg-white rounded-[28px] p-4 w-full max-w-[280px] shadow-sm hover:shadow-xl hover:-translate-y-2">
+
+          <div class="overflow-hidden rounded-[22px] mb-4">
+            <img
+              src="asset/project1.png"
+              alt="trash becomes a blessing"
+              class="w-full h-[170px] object-cover hover:scale-110 duration-500">
+          </div>
+          <h2 class="text-[18px] font-semibold text-center mb-2">
+            Trash Becomes a Blessing
+          </h2>
+          <p class="text-[14px] text-gray-600 leading-6 mb-5">
+            Promotes waste management and environmental awareness.
+          </p>
+          <a
+            href="https://iicharamadhani.github.io/Trash-Becomes-a-Blessing/"
+            target="_blank"
+            class="inline-flex bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-5 py-2 rounded-full text-[14px] hover:scale-105">
+            View more
+          </a>
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card opacity-0 translate-y-10 duration-700 bg-white rounded-[28px] p-4 w-full max-w-[280px] shadow-sm hover:shadow-xl hover:-translate-y-2">
+
+          <div class="overflow-hidden rounded-[22px] mb-4">
+            <img
+              src="asset/project2.png"
+              alt="schooll"
+              class="w-full h-[170px] object-cover hover:scale-110 duration-500">
+          </div>
+          <h2 class="text-[18px] font-semibold text-center mb-2">
+            School Landing Page
+          </h2>
+          <p class="text-[14px] text-gray-600 leading-6 mb-5">
+            Responsive school website with modern design layout.
+          </p>
+          <a
+            href="https://iicharamadhani.github.io/web-smk-digital/"
+            target="_blank"
+            class="inline-flex bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-5 py-2 rounded-full text-[14px] hover:scale-105">
+            View more
+          </a>
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card opacity-0 translate-y-10 duration-700 bg-white rounded-[28px] p-4 w-full max-w-[280px] shadow-sm hover:shadow-xl hover:-translate-y-2">
+
+          <div class="overflow-hidden rounded-[22px] mb-4">
+            <img
+              src="asset/project3.png"
+              alt="environment"
+              class="w-full h-[170px] object-cover hover:scale-110 duration-500">
+          </div>
+          <h2 class="text-[18px] font-semibold text-center mb-2">
+            Environment Website
+          </h2>
+          <p class="text-[14px] text-gray-600 leading-6 mb-5">
+            Encourages people to care more about nature and Earth.
+
+          </p>
+          <a
+            href="https://iicharamadhani.github.io/environment/"
+            target="_blank"
+            class="inline-flex bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-5 py-2 rounded-full text-[14px] hover:scale-105">
+            View more
+          </a>
+        </div>
+      </div>
+
+      <!-- BOTTOM CARD -->
+      <div class="grid md:grid-cols-2 gap-8 justify-items-center md:w-[800px] mx-auto">
+
+        <!-- CARD -->
+        <div class="project-card opacity-0 translate-y-10 duration-700 bg-white rounded-[28px] p-4 w-full max-w-[280px] shadow-sm hover:shadow-xl hover:-translate-y-2">
+
+          <div class="overflow-hidden rounded-[22px] mb-4">
+            <img
+              src="asset/project4.png"
+              alt="medcare"
+              class="w-full h-[170px] object-cover hover:scale-110 duration-500">
+          </div>
+          <h2 class="text-[18px] font-semibold text-center mb-2">
+            Medical Care
+          </h2>
+          <p class="text-[14px] text-gray-600 leading-6 mb-5">
+            Clean medical information website with simple UI design.
+          </p>
+          <a
+            href="https://iicharamadhani.github.io/MedCare/"
+            target="_blank"
+            class="inline-flex bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-5 py-2 rounded-full text-[14px] hover:scale-105">
+            View more
+          </a>
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card opacity-0 translate-y-10 duration-700 bg-white rounded-[28px] p-4 w-full max-w-[280px] shadow-sm hover:shadow-xl hover:-translate-y-2">
+
+          <div class="overflow-hidden rounded-[22px] mb-4">
+            <img
+              src="asset/project5.png"
+              alt="fashion & apparel"
+              class="w-full h-[170px] object-cover hover:scale-110 duration-500">
+          </div>
+          <h2 class="text-[18px] font-semibold text-center mb-2">
+            Fashion & Apparel
+          </h2>
+          <p class="text-[14px] text-gray-600 leading-6 mb-5">
+            Modern fashion website showcasing stylish products.
+          </p>
+          <a
+            href="https://iicharamadhani.github.io/ROSEA/"
+            target="_blank"
+            class="inline-flex bg-[#e7b9c7] hover:bg-[#dfabba] duration-300 px-5 py-2 rounded-full text-[14px] hover:scale-105">
+            View more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<div class="max-w-7xl mx-auto px-4 md:px-10">
+<section id="skills" class="py-14 md:py-16">
+
+  <!-- TITLE -->
+  <div class="text-center mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">
+      My Technical Skills
+    </h1>
+    <p class="text-[14px] md:text-[16px] text-gray-700 leading-7 max-w-3xl mx-auto">
+      Here are the technologies and tools I use to build modern, responsive, and user-friendly websites.
+    </p>
+  </div>
+
+  <!-- WRAPPER -->
+  <div class="bg-[#f4d9e6] rounded-[38px] px-5 md:px-8 py-7 md:py-8">
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-2 gap-5">
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <!-- ICON -->
+        <img src="asset/html.jpeg" alt="" class="w-16 h-16 object-contain">
+
+        <!-- CONTENT -->
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              HTML
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              85%
+            </span>
+          </div>
+
+          <!-- BAR -->
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <img src="asset/bootstrap.jpeg" alt="" class="w-16 h-16 object-contain">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              Bootstrap
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              75%
+            </span>
+          </div>
+
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <img src="asset/css.jpeg" alt="" class="w-16 h-16 object-contain">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              CSS
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              75%
+            </span>
+          </div>
+
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <img src="asset/tailwind.jpeg" alt="" class="w-16 h-16 object-contain">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              Tailwind
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              65%
+            </span>
+          </div>
+
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="65%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <img src="asset/js.jpeg" alt="" class="w-16 h-16 object-contain">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              JavaScript
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              65%
+            </span>
+          </div>
+
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="65%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="skill-card bg-white rounded-[28px] p-4 flex items-center gap-4 shadow-sm hover:shadow-lg duration-500">
+
+        <img src="asset/figma.jpeg" alt="" class="w-16 h-16 object-contain">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-xl font-semibold">
+              UI Design (Figma)
+            </h2>
+            <span class="text-[#c89a9a] text-[15px] font-medium">
+              90%
+            </span>
+          </div>
+
+          <div class="w-full h-3 bg-[#f1d1dd] rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-[#d8aaaa] rounded-full w-0" data-width="90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-12 md:py-14">
+
+  <!-- TITLE -->
+  <div class="text-center mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">
+      Contact Me
+    </h1>
+    <p class="text-[14px] md:text-[16px] text-gray-700 leading-7 max-w-2xl mx-auto">
+      Have a project in mind or just want to say hello? Feel free to reach out — I’d love to hear from you.
+    </p>
+  </div>
+
+  <!-- WRAPPER -->
+  <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+    <!-- LEFT -->
+    <div>
+
+      <!-- ITEM -->
+      <a
+        href="mailto:icharamadhani202@gmail.com"
+        class="contact-item opacity-0 translate-y-10 duration-700 group flex items-center gap-5 pb-6 border-b border-[#dcc1cb] hover:translate-x-2">
+        <!-- ICON -->
+        <div class="w-16 h-16 rounded-full bg-[#f4d9e6] flex items-center justify-center text-3xl duration-300 group-hover:bg-[#e9c4d3] group-hover:scale-110">
+          <i class="ri-mail-line"></i>
+        </div>
+
+        <!-- TEXT -->
+        <div>
+          <h2 class="text-xl font-semibold mb-1">
+            Email
+          </h2>
+          <p class="text-[16px] text-gray-700 group-hover:text-pink-500 duration-300">
+            icharamadhani202@gmail.com
+          </p>
+        </div>
+      </a>
+
+      <!-- ITEM -->
+      <a
+        href="tel:+6285726225034"
+        class="contact-item opacity-0 translate-y-10 duration-700 group flex items-center gap-5 py-6 border-b border-[#dcc1cb] hover:translate-x-2">
+
+        <!-- ICON -->
+        <div class="w-16 h-16 rounded-full bg-[#f4d9e6] flex items-center justify-center text-3xl duration-300 group-hover:bg-[#e9c4d3] group-hover:scale-110">
+          <i class="ri-phone-line"></i>
+        </div>
+
+        <!-- TEXT -->
+        <div>
+          <h2 class="text-xl font-semibold mb-1">
+            Phone
+          </h2>
+          <p class="text-[16px] text-gray-700 group-hover:text-pink-500 duration-300">
+            +62 857-2622-5034
+          </p>
+        </div>
+      </a>
+
+      <!-- ITEM -->
+      <a
+        href="https://maps.google.com"
+        target="_blank"
+        class="contact-item opacity-0 translate-y-10 duration-700 group flex items-center gap-5 py-6 hover:translate-x-2">
+
+        <!-- ICON -->
+        <div class="w-16 h-16 rounded-full bg-[#f4d9e6] flex items-center justify-center text-3xl duration-300 group-hover:bg-[#e9c4d3] group-hover:scale-110">
+          <i class="ri-map-pin-line"></i>
+        </div>
+
+        <!-- TEXT -->
+        <div>
+          <h2 class="text-xl font-semibold mb-1">
+            Location
+          </h2>
+          <p class="text-[16px] text-gray-700 group-hover:text-pink-500 duration-300">
+            Salatiga, Indonesia
+          </p>
+        </div>
+      </a>
+
+      <!-- SOCIAL -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold mb-2">
+          Let’s Connect
+        </h2>
+        <p class="text-[15px] text-gray-700 mb-5">
+          Find me on social media
+        </p>
+
+        <!-- ICON -->
+        <div class="flex gap-3">
+          <a href="https://www.instagram.com/bo0opcha?igsh=MTM2cTdlMnMwNncwaQ==" target="_blank"
+            class="social-icon w-12 h-12 rounded-full bg-[#f4d9e6] flex items-center justify-center text-xl hover:scale-110 hover:bg-[#e9c4d3] duration-300">
+            <i class="ri-instagram-line"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@wooppieees?_r=1&_t=ZS-96LOGwTrl5x" target="_blank"
+            class="social-icon w-12 h-12 rounded-full bg-[#f4d9e6] flex items-center justify-center text-xl hover:scale-110 hover:bg-[#e9c4d3] duration-300">
+            <i class="ri-tiktok-line"></i>
+          </a>
+
+          <a href="https://github.com/iicharamadhani" target="_blank"
+            class="social-icon w-12 h-12 rounded-full bg-[#f4d9e6] flex items-center justify-center text-xl hover:scale-110 hover:bg-[#e9c4d3] duration-300">
+            <i class="ri-github-fill"></i>
+          </a>
+
+          <a href="https://x.com/icchaaai" target="_blank"
+            class="social-icon w-12 h-12 rounded-full bg-[#f4d9e6] flex items-center justify-center text-xl hover:scale-110 hover:bg-[#e9c4d3] duration-300">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-form opacity-0 translate-x-10 duration-1000 bg-[#f4d9e6] rounded-[30px] p-5 md:p-7">
+
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">
+        Send Message
+      </h2>
+
+      <!-- FORM -->
+      <form id="contactForm">
+
+        <!-- INPUT -->
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+
+          <!-- NAME -->
+          <div class="input-box duration-300 flex items-center gap-3 border-2 border-[#d7aebb] rounded-2xl px-4 h-[62px] bg-white/30">
+            <i class="ri-user-3-fill text-xl text-[#6e5a61]"></i>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="contact-input w-full bg-transparent outline-none text-[15px] placeholder:text-[#6e5a61]">
+          </div>
+
+          <!-- EMAIL -->
+          <div class="input-box duration-300 flex items-center gap-3 border-2 border-[#d7aebb] rounded-2xl px-4 h-[62px] bg-white/30">
+            <i class="ri-mail-line text-xl text-[#6e5a61]"></i>
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="contact-input w-full bg-transparent outline-none text-[15px] placeholder:text-[#6e5a61]">
+          </div>
+        </div>
+
+        <!-- SUBJECT -->
+        <div class="input-box duration-300 flex items-center gap-3 border-2 border-[#d7aebb] rounded-2xl px-4 h-[62px] mb-4 bg-white/30">
+          <i class="ri-pencil-line text-xl text-[#6e5a61]"></i>
+          <input
+            type="text"
+            placeholder="Subject"
+            class="contact-input w-full bg-transparent outline-none text-[15px] placeholder:text-[#6e5a61]">
+
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="input-box duration-300 flex gap-3 border-2 border-[#d7aebb] rounded-2xl px-4 py-4 mb-5 bg-white/30">
+          <i class="ri-chat-3-line text-xl text-[#6e5a61] mt-1"></i>
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            class="contact-input w-full bg-transparent outline-none resize-none text-[15px] placeholder:text-[#6e5a61]"></textarea>
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          type="submit"
+          class="contact-btn bg-white px-7 h-[58px] rounded-2xl flex items-center gap-3 text-[16px] hover:scale-105 hover:bg-[#f8eef2] duration-300 shadow-sm">
+          <i class="ri-send-plane-line text-xl"></i>
+          Send Message
+        </button>
+
+        <!-- SUCCESS -->
+        <p
+          id="successMessage"
+          class="hidden text-green-600 font-medium pt-4">
+          ✓ Message sent successfully!
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-14 bg-[#f4d9e6] border border-[#e7c7d3]">
+
+  <!-- CONTENT -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 md:px-10 py-10">
+
+    <!-- LEFT -->
+    <div>
+
+      <!-- LOGO -->
+      <a href="#home" class="flex items-center gap-3 mb-5 w-fit">
+        <img src="asset/logoo.png" alt="" class="w-12 h-12 rounded-full object-cover">
+        <h1 class="text-2xl font-bold hover:text-pink-500 duration-300">
+          My Portfolio
+        </h1>
+      </a>
+
+      <!-- TEXT -->
+      <p class="text-[15px] leading-7 text-gray-700 mb-5">
+        Have a project in mind or just want to say hello? Feel free to reach out.
+      </p>
+
+      <!-- SOCIAL -->
+      <div class="flex gap-3">
+
+        <!-- INSTAGRAM -->
+        <a
+          href="https://www.instagram.com/bo0opcha?igsh=MTM2cTdlMnMwNncwaQ=="
+          target="_blank"
+          class="footer-social w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300">
+          <i class="ri-instagram-line"></i>
+        </a>
+
+        <!-- TIKTOK -->
+        <a
+          href="https://www.tiktok.com/@wooppieees?_r=1&_t=ZS-96LOGwTrl5x"
+          target="_blank"
+          class="footer-social w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300">
+          <i class="ri-tiktok-line"></i>
+        </a>
+
+        <!-- GITHUB -->
+        <a
+          href="https://github.com/iicharamadhani"
+          target="_blank"
+          class="footer-social w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300">
+          <i class="ri-github-fill"></i>
+        </a>
+
+        <!-- TWITTER -->
+        <a
+          href="https://x.com/icchaaai"
+          target="_blank"
+          class="footer-social w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300">
+          <i class="ri-twitter-x-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-5">
+        Quick Links
+      </h2>
+      <ul class="space-y-2 text-[15px] text-gray-700">
+        <li>
+          <a href="" class="footer-link hover:text-pink-500 duration-300">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="footer-link hover:text-pink-500 duration-300">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="footer-link hover:text-pink-500 duration-300">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="footer-link hover:text-pink-500 duration-300">
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="footer-link hover:text-pink-500 duration-300">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SKILLS -->
+    <div>
+
+      <h2 class="text-2xl font-semibold mb-5">
+        My Skills
+      </h2>
+      <ul class="space-y-2 text-[15px] text-gray-700">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-5">
+        Let’s Connect
+      </h2>
+      <div class="space-y-4">
+
+        <!-- EMAIL -->
+        <a
+          href="mailto:icharamadhani202@gmail.com"
+          class="group flex items-center gap-3">
+          <!-- ICON -->
+          <div class="w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300 group-hover:bg-[#dfabba] group-hover:scale-110">
+            <i class="ri-mail-line"></i>
+          </div>
+
+          <!-- TEXT -->
+          <p class="text-[15px] text-gray-700 leading-6 duration-300 group-hover:text-pink-500">
+            icharamadhani202<br>@gmail.com
+          </p>
+        </a>
+
+        <!-- PHONE -->
+        <a
+          href="tel:+6285726225034"
+          class="group flex items-center gap-3">
+
+          <!-- ICON -->
+          <div class="w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300 group-hover:bg-[#dfabba] group-hover:scale-110">
+            <i class="ri-phone-line"></i>
+          </div>
+
+          <!-- TEXT -->
+          <p class="text-[15px] text-gray-700 duration-300 group-hover:text-pink-500">
+            +62 857-2622-5034
+          </p>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+          href="https://www.instagram.com/bo0opcha?igsh=MTM2cTdlMnMwNncwaQ=="
+          target="_blank"
+          class="group flex items-center gap-3">
+
+          <!-- ICON -->
+          <div class="w-11 h-11 rounded-full bg-[#e9c4d3] flex items-center justify-center text-xl duration-300 group-hover:bg-[#dfabba] group-hover:scale-110">
+            <i class="ri-instagram-line"></i>
+          </div>
+
+          <!-- TEXT -->
+          <p class="text-[15px] text-gray-700 duration-300 group-hover:text-pink-500">
+            @bo0opcha
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="border-t border-[#dcb8c5] py-5 text-center">
+    <p class="text-[15px] text-gray-700">
+      © 2026 My Portfolio. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
